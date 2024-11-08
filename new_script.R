@@ -15,5 +15,7 @@ df <- data.frame(a = sample(x = c(1:100), replace = T, size = 50),
    pivot_longer(cols = c(a, b),
                 names_to = "type",
                 values_to = "gene_copy_number") |>
-   ggplot(aes(x = type, y = gene_copy_number)) +
-   geom_jitter(width = 0.25)
+   ggplot(aes(x = type, y = gene_copy_number, fill = type)) +
+   geom_jitter(width = 0.25, shape = 21, size = 3) +
+   scale_fill_manual(values = c("steelblue1", "hotpink2"))
+
