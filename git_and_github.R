@@ -14,3 +14,6 @@ gitcreds::gitcreds_set()
 git_vaccinate()
 
 use_git()
+
+usethis::git_default_branch_rename()
+usethis::git_default_branch_configure(name = "main")
