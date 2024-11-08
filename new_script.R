@@ -27,3 +27,8 @@ df <- data.frame(a = sample(x = c(1:100), replace = T, size = 50),
    ggtitle("Ficticious gene copy numbers") +
    theme(legend.position = "none")
 
+
+
+
+create_from_github("https://github.com/ibdj/githubcommitting_test", fork = TRUE)
+
