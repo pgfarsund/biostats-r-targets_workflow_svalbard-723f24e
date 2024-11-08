@@ -17,3 +17,8 @@ use_git()
 
 usethis::git_default_branch_rename()
 usethis::git_default_branch_configure(name = "main")
+
+
+use_github()
+
+# i've made a change
